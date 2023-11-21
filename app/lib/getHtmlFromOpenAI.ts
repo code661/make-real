@@ -62,7 +62,7 @@ export async function getHtmlFromOpenAI({
 		throw Error('You need to provide an API key (sorry)')
 	}
 	try {
-		const resp = await fetch('https://api.openai.com/v1/chat/completions', {
+		const resp = await fetch('https://api.gptapi.us/v1/chat/completions', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
